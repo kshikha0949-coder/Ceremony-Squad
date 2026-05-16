@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ceremony Squad – Premium Wedding & Event Planning Agency. Crafting timeless celebrations with elegance and precision." />
+  <meta name="keywords" content="wedding planning, event management, luxury events, ceremony, celebration" />
+  <title>Ceremony Squad | Crafting Timeless Celebrations</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+<canvas id="particles-canvas"></canvas>
+
+  <!-- CURSOR -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+  <!-- Loading Screen -->
+  <div id="loader" class="loader">
+    <div class="loader-inner">
+      <div class="loader-logo">CS</div>
+      <div class="loader-bar"><div class="loader-fill"></div></div>
+      <p class="loader-text">Preparing something beautiful…</p>
+    </div>
+  </div>
+
+  <!-- Back to Top -->
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">&#8679;</button>
+
+  <!-- ===================== HEADER ===================== -->
+  <header id="header" class="header">
+    <nav class="nav container">
+      <a href="#home" class="nav-logo">Ceremony<span>Squad</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===================== HERO ===================== -->
+    <section id="home" class="hero">
+      <div class="hero-bg">
+        <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=1800&q=80" alt="Luxury wedding celebration" class="hero-img" />
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="hero-content container">
+        <p class="hero-eyebrow reveal-fade">— Est. 2015 · Premium Event Planning —</p>
+        <h1 class="hero-title reveal-fade delay-1">Crafting<br /><em>Timeless</em><br />Celebrations</h1>
+        <p class="hero-sub reveal-fade delay-2">We design bespoke weddings and luxury events that linger in memory long after the last petal falls. Every detail, every moment — curated with intention.</p>
+        <div class="hero-cta reveal-fade delay-3">
+          <a href="#contact" class="btn btn-primary">Plan Your Event</a>
+          <a href="#gallery" class="btn btn-ghost">View Portfolio</a>
+        </div>
+      </div>
+      <a href="#about" class="hero-scroll">
+        <span class="scroll-line"></span>
+        <span class="scroll-label">Scroll</span>
+      </a>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section id="about" class="about section">
+      <div class="container about-grid">
+        <div class="about-visual reveal-left">
+          <div class="about-img-wrap">
+            <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=800&q=80" alt="Our team at work" />
+            <div class="about-accent-card">
+              <span class="accent-number">10</span>
+              <span class="accent-label">Years of<br/>Excellence</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-content reveal-right">
+          <p class="section-eyebrow">Our Story</p>
+          <h2 class="section-title">Where Vision Meets <em>Elegance</em></h2>
+          <p class="about-text">Founded in 2015, Ceremony Squad was born from a singular passion: to transform life's most meaningful moments into unforgettable experiences. We blend artistry, precision, and warmth to create events that feel both extraordinary and deeply personal.</p>
+          <p class="about-text">From intimate garden weddings to grand ballroom galas, our team of dedicated planners brings the same devotion to every detail — from the candle's flicker to the final farewell.</p>
+          <div class="stats-row">
+            <div class="stat-item">
+              <span class="stat-num" data-target="500">0</span><span class="stat-plus">+</span>
+              <p>Events Delivered</p>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num" data-target="200">0</span><span class="stat-plus">+</span>
+              <p>Happy Clients</p>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num" data-target="10">0</span><span class="stat-plus"></span>
+              <p>Years Experience</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SERVICES ===================== -->
+    <section id="services" class="services section section-tinted">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-eyebrow">What We Do</p>
+          <h2 class="section-title">Our <em>Services</em></h2>
+          <p class="section-sub">Tailored offerings for every celebration, crafted with precision and heart.</p>
+        </div>
+        <div class="services-grid">
+          <div class="service-card reveal-up">
+            <div class="service-icon">&#9900;</div>
+            <h3>Wedding Planning</h3>
+            <p>Full-service wedding coordination from proposal to send-off. We manage every thread so you live every moment.</p>
+            <a href="#contact" class="service-link">Enquire →</a>
+          </div>
+          <div class="service-card reveal-up delay-1">
+            <div class="service-icon">&#10022;</div>
+            <h3>Destination Events</h3>
+            <p>Curated celebrations in the world's most beautiful locations — Europe, Asia, the Maldives and beyond.</p>
+            <a href="#contact" class="service-link">Enquire →</a>
+          </div>
+          <div class="service-card reveal-up delay-2">
+            <div class="service-icon">&#9670;</div>
+            <h3>Corporate Gatherings</h3>
+            <p>Sophisticated conferences, award nights, and brand events that leave lasting impressions on guests and clients alike.</p>
+            <a href="#contact" class="service-link">Enquire →</a>
+          </div>
+          <div class="service-card reveal-up delay-3">
+            <div class="service-icon">&#10047;</div>
+            <h3>Birthday Celebrations</h3>
+            <p>From intimate dinners to grand soirées — milestone birthdays planned with style, surprise, and soul.</p>
+            <a href="#contact" class="service-link">Enquire →</a>
+          </div>
+          <div class="service-card reveal-up delay-4">
+            <div class="service-icon">&#10038;</div>
+            <h3>Luxury Decoration</h3>
+            <p>Award-winning floral and décor installations that transform any venue into a scene from a dream.</p>
+            <a href="#contact" class="service-link">Enquire →</a>
+          </div>
+          <div class="service-card reveal-up delay-5">
+            <div class="service-icon">&#9835;</div>
+            <h3>Entertainment Management</h3>
+            <p>Live bands, DJs, performers, and bespoke entertainment packages curated to match your celebration's spirit.</p>
+            <a href="#contact" class="service-link">Enquire →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== GALLERY ===================== -->
+      <section id="gallery" class="gallery section">
+        <div class="container">
+          <div class="section-header">
+            <p class="section-eyebrow">Our Portfolio</p>
+            <h2 class="section-title">A Glimpse of <em>Our Work</em></h2>
+            <p class="section-sub">Each image holds a story. Browse our curated collection of memorable celebrations.</p>
+          </div>
+          <div class="gallery-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="weddings">Weddings</button>
+            <button class="filter-btn" data-filter="corporate">Corporate</button>
+            <button class="filter-btn" data-filter="parties">Parties</button>
+            <button class="filter-btn" data-filter="luxury">Luxury Events</button>
+            <a href="gallery.html" class="filter-btn">More</a>
+          </div>
+          <div class="masonry-grid" id="galleryGrid">
+            <div class="masonry-item" data-category="weddings">
+              <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=600&q=80" alt="Elegant wedding reception" loading="lazy"/>
+              <div class="masonry-overlay"><span>Garden Wedding</span></div>
+            </div>
+            <div class="masonry-item tall" data-category="luxury">
+              <img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=600&q=80" alt="Luxury gala event" loading="lazy"/>
+              <div class="masonry-overlay"><span>Luxury Gala</span></div>
+            </div>
+            <div class="masonry-item" data-category="parties">
+              <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=600&q=80" alt="Birthday celebration" loading="lazy"/>
+              <div class="masonry-overlay"><span>Milestone Birthday</span></div>
+            </div>
+            <div class="masonry-item" data-category="corporate">
+              <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600&q=80" alt="Corporate event" loading="lazy"/>
+              <div class="masonry-overlay"><span>Corporate Summit</span></div>
+            </div>
+            <div class="masonry-item tall" data-category="weddings">
+              <img src="https://images.unsplash.com/photo-1606800052052-a08af7148866?w=600&q=80" alt="Wedding ceremony" loading="lazy"/>
+              <div class="masonry-overlay"><span>Beachfront Ceremony</span></div>
+            </div>
+            <div class="masonry-item" data-category="luxury">
+              <img src="https://images.unsplash.com/photo-1478146059778-26028b07395a?w=600&q=80" alt="Luxury floral decor" loading="lazy"/>
+              <div class="masonry-overlay"><span>Floral Installation</span></div>
+            </div>
+            <div class="masonry-item" data-category="weddings">
+              <img src="image/corp/corpor.jpg" alt="Wedding table setting" loading="lazy"/>
+              <div class="masonry-overlay"><span>Table Couture</span></div>
+            </div>
+            <div class="masonry-item" data-category="parties">
+              <img src="https://images.unsplash.com/photo-1504196606672-aef5c9cefc92?w=600&q=80" alt="Cocktail party" loading="lazy"/>
+              <div class="masonry-overlay"><span>Cocktail Soirée</span></div>
+            </div>
+            <div class="masonry-item" data-category="corporate">
+              <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?w=600&q=80" alt="Award ceremony" loading="lazy"/>
+              <div class="masonry-overlay"><span>Awards Evening</span></div>
+            </div>
+          </div>
+        </div>
+        <!-- Lightbox -->
+        <div id="lightbox" class="lightbox">
+          <div class="lightbox-backdrop"></div>
+          <div class="lightbox-content">
+            <button class="lightbox-close" id="lightboxClose">&times;</button>
+            <button class="lightbox-prev" id="lightboxPrev">&#8592;</button>
+            <img src="" alt="" id="lightboxImg" />
+            <button class="lightbox-next" id="lightboxNext">&#8594;</button>
+            <p id="lightboxCaption" class="lightbox-caption"></p>
+          </div>
+        </div>
+      </section>
+
+    <!-- ===================== FEATURED EVENTS ===================== -->
+    <section id="events" class="events section section-tinted">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-eyebrow">Coming Up</p>
+          <h2 class="section-title">Featured <em>Events</em></h2>
+          <p class="section-sub">A selection of our most anticipated upcoming celebrations.</p>
+        </div>
+        <div class="events-list">
+          <article class="event-card reveal-up">
+            <div class="event-img">
+              <img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?w=500&q=80" alt="Grand Wedding Gala" loading="lazy"/>
+            </div>
+            <div class="event-body">
+              <span class="event-tag">Wedding</span>
+              <h3>The Kapoor–Mehta Grand Wedding</h3>
+              <p>An opulent celebration at the Leela Palace, featuring three days of curated ceremonies, floral pavilions, and live orchestral performances.</p>
+              <div class="event-meta">
+                <span>&#128205; Udaipur, Rajasthan</span>
+                <span>&#128197; 14 June 2026</span>
+              </div>
+            </div>
+          </article>
+          <article class="event-card reveal-up delay-1">
+            <div class="event-img">
+              <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=500&q=80" alt="Corporate Gala" loading="lazy"/>
+            </div>
+            <div class="event-body">
+              <span class="event-tag">Corporate</span>
+              <h3>Horizon Tech Annual Gala 2026</h3>
+              <p>A black-tie awards evening celebrating innovation, featuring a curated tasting menu, keynote stage, and bespoke entertainment acts.</p>
+              <div class="event-meta">
+                <span>&#128205; The Oberoi, Mumbai</span>
+                <span>&#128197; 22 July 2026</span>
+              </div>
+            </div>
+          </article>
+          <article class="event-card reveal-up delay-2">
+            <div class="event-img">
+              <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=500&q=80" alt="Destination Party" loading="lazy"/>
+            </div>
+            <div class="event-body">
+              <span class="event-tag">Luxury Event</span>
+              <h3>Maldives Sunset Soirée</h3>
+              <p>An exclusive over-water gathering for 80 guests, with floating floral arrangements, a DJ set under the stars, and a Michelin-chef dinner.</p>
+              <div class="event-meta">
+                <span>&#128205; Velaa Private Island, Maldives</span>
+                <span>&#128197; 5 September 2026</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== TESTIMONIALS ===================== -->
+    <section id="testimonials" class="testimonials section">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-eyebrow">Kind Words</p>
+          <h2 class="section-title">What Our Clients <em>Say</em></h2>
+        </div>
+        <div class="testimonial-carousel">
+          <div class="testimonial-track" id="testimonialTrack">
+            <div class="testimonial-card">
+              <div class="testi-stars">★★★★★</div>
+              <p class="testi-text">"Ceremony Squad turned our dream wedding into something beyond imagination. Every detail was flawless — from the floral arches to the candlelit dinner. We still get calls from guests saying it was the most beautiful wedding they've ever attended."</p>
+              <div class="testi-author">
+                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&q=80" alt="Priya Sharma" loading="lazy"/>
+                <div>
+                  <strong>Priya Sharma</strong>
+                  <span>Garden Wedding · Delhi</span>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <div class="testi-stars">★★★★★</div>
+              <p class="testi-text">"Our corporate gala went off without a single hiccup. The team managed 400 guests, a live band, and a five-course dinner with the grace of true professionals. I cannot recommend Ceremony Squad highly enough."</p>
+              <div class="testi-author">
+                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=80&q=80" alt="Arjun Malhotra" loading="lazy"/>
+                <div>
+                  <strong>Arjun Malhotra</strong>
+                  <span>Corporate Gala · Mumbai</span>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <div class="testi-stars">★★★★★</div>
+              <p class="testi-text">"Planning a destination wedding abroad felt overwhelming — until we found Ceremony Squad. They handled every cross-border detail with ease and warmth. Our Tuscany wedding was pure poetry. We will cherish it forever."</p>
+              <div class="testi-author">
+                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=80&q=80" alt="Meera & Rohan Patel" loading="lazy"/>
+                <div>
+                  <strong>Meera & Rohan Patel</strong>
+                  <span>Destination Wedding · Tuscany</span>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <div class="testi-stars">★★★★★</div>
+              <p class="testi-text">"My 50th birthday celebration was beyond anything I imagined. The décor, the performers, the little personalised touches — it felt like a film set made just for me. My guests were speechless."</p>
+              <div class="testi-author">
+                <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=80&q=80" alt="Sunita Kapoor" loading="lazy"/>
+                <div>
+                  <strong>Sunita Kapoor</strong>
+                  <span>Luxury Birthday · Jaipur</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-controls">
+            <button class="carousel-btn" id="prevBtn">&#8592;</button>
+            <div class="carousel-dots" id="carouselDots"></div>
+            <button class="carousel-btn" id="nextBtn">&#8594;</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section id="contact" class="contact section section-tinted">
+      <div class="container contact-grid">
+        <div class="contact-info reveal-left">
+          <p class="section-eyebrow">Get In Touch</p>
+          <h2 class="section-title">Let's Create Something <em>Beautiful</em></h2>
+          <p class="contact-desc">Share your vision with us. Whether it's an intimate ceremony or a grand gala, we're here to listen, plan, and exceed every expectation.</p>
+          <ul class="contact-details">
+            <li><span class="contact-icon">&#128205;</span> 14 Lodhi Estate, New Delhi — 110003</li>
+            <li><span class="contact-icon">&#128222;</span> +91 9229253636</li>
+            <li><span class="contact-icon">&#9993;</span> shikhakumari3296@gmail.com</li>
+          </ul>
+          <div class="social-links">
+            <a href="#" aria-label="Instagram" class="social-link">Ig</a>
+            <a href="#" aria-label="Facebook" class="social-link">Fb</a>
+            <a href="#" aria-label="Pinterest" class="social-link">Pt</a>
+            <a href="#" aria-label="YouTube" class="social-link">Yt</a>
+          </div>
+          <div class="map-placeholder">
+            <div class="map-inner">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241318.22867014757!2d72.71354186608978!3d19.081434216901815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1778923303902!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form-wrap reveal-right">
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="Your full name" />
+              <span class="form-error" id="nameError"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" />
+              <span class="form-error" id="emailError"></span>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="+91 00000 00000" />
+            </div>
+            <div class="form-group">
+              <label for="eventType">Event Type</label>
+              <select id="eventType" name="eventType">
+                <option value="">Select event type</option>
+                <option>Wedding Planning</option>
+                <option>Destination Event</option>
+                <option>Corporate Gathering</option>
+                <option>Birthday Celebration</option>
+                <option>Luxury Decoration</option>
+                <option>Entertainment Management</option>
+              </select>
+              <span class="form-error" id="eventError"></span>
+            </div>
+            <div class="form-group">
+              <label>Event Date</label>
+              <input type="date" />
+            </div>
+            <div class="form-group">
+              <label for="guests">No. of Guests</label>
+              <select id="guests" name="guests">
+                <option value="">Select number of guests</option>
+                <option>1-50</option>
+                <option>50-100</option>
+                <option>100-200</option>
+                <option>200-500</option>
+                <option>500+</option>
+              </select>
+              <span class="form-error" id="guestsError"></span>
+            </div>
+            <div class="form-group">
+              <label for="message">Your Vision</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell us about your dream event…"></textarea>
+              <span class="form-error" id="messageError"></span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Send Enquiry</button>
+            <p class="form-success" id="formSuccess">Thank you! We'll be in touch within 24 hours.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#home" class="nav-logo">Ceremony<span>Squad</span></a>
+        <p>Crafting timeless celebrations with elegance, precision, and heart since 2015.</p>
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="Instagram">Ig</a>
+          <a href="#" class="social-link" aria-label="Facebook">Fb</a>
+          <a href="#" class="social-link" aria-label="Pinterest">Pt</a>
+          <a href="#" class="social-link" aria-label="YouTube">Yt</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Wedding Planning</a></li>
+          <li><a href="#services">Destination Events</a></li>
+          <li><a href="#services">Corporate Gatherings</a></li>
+          <li><a href="#services">Birthday Celebrations</a></li>
+          <li><a href="#services">Luxury Decoration</a></li>
+          <li><a href="#services">Entertainment</a></li>
+        </ul>
+      </div>
+      <div class="footer-col footer-newsletter">
+        <h4>Newsletter</h4>
+        <p>Receive inspiration, event trends, and exclusive offers.</p>
+        <form class="newsletter-form" id="newsletterForm">
+          <input type="email" placeholder="Your email address" required />
+          <button type="submit">Subscribe</button>
+        </form>
+        <p class="newsletter-success" id="newsletterSuccess">You're on the list!</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Ceremony Squad. All rights reserved. Crafted with love.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ceremony Squad – Premium Wedding & Event Planning Agency. Crafting timeless celebrations with elegance and precision." />
+  <meta name="keywords" content="wedding planning, event management, luxury events, ceremony, celebration" />
+  <title>Ceremony Squad | Crafting Timeless Celebrations</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <canvas id="particles-canvas"></canvas>
+
+  <!-- CURSOR -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+  <!-- Loading Screen -->
+  <div id="loader" class="loader">
+    <div class="loader-inner">
+      <div class="loader-logo">CS</div>
+      <div class="loader-bar"><div class="loader-fill"></div></div>
+      <p class="loader-text">Preparing something beautiful…</p>
+    </div>
+  </div>
+
+  <!-- Back to Top -->
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">&#8679;</button>
+
+  <!-- ===================== HEADER ===================== -->
+  <header id="header" class="header">
+    <nav class="nav container">
+      <a href="index.html" class="nav-logo">Ceremony<span>Squad</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html">About</a></li>
+        <li><a href="index.html">Services</a></li>
+        <li><a href="index.html">Gallery</a></li>
+        <li><a href="index.html">Events</a></li>
+        <li><a href="index.html">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===================== HERO ===================== -->
+    <section id="home" class="hero">
+      <div class="hero-bg">
+        <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=1800&q=80" alt="Luxury wedding celebration" class="hero-img" />
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="hero-content container">
+        <p class="hero-eyebrow reveal-fade">— Est. 2015 · Premium Event Planning —</p>
+        <h1 class="hero-title reveal-fade delay-1">Crafting<br /><em>Timeless</em><br />Celebrations</h1>
+        <p class="hero-sub reveal-fade delay-2">We design bespoke weddings and luxury events that linger in memory long after the last petal falls. Every detail, every moment — curated with intention.</p>
+      </div>
+      <a href="#about" class="hero-scroll">
+        <span class="scroll-line"></span>
+        <span class="scroll-label">Scroll</span>
+      </a>
+    </section>
+
+
+    <section id="gallery" class="gallery section">
+        <div class="container">
+          <div class="section-header">
+            <p class="section-eyebrow">Our Portfolio</p>
+            <h2 class="section-title">A Glimpse of <em>Our Work</em></h2>
+            <p class="section-sub">Each image holds a story. Browse our curated collection of memorable celebrations.</p>
+          </div>
+          <div class="gallery-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="weddings">Weddings</button>
+            <button class="filter-btn" data-filter="corporate">Corporate</button>
+            <button class="filter-btn" data-filter="parties">Parties</button>
+            <button class="filter-btn" data-filter="luxury">Luxury Events</button>
+
+          </div>
+          <div class="masonry-grid" id="galleryGrid">
+            <div class="masonry-item" data-category="weddings">
+              <img src="image/wed/engage.webp" alt="Elegant wedding reception" loading="lazy"/>
+              <div class="masonry-overlay"><span>Engagement Ceremony</span></div>
+            </div>
+            <div class="masonry-item tall" data-category="luxury">
+              <img src="image/lux/ani.jpg" alt="Luxury gala event" loading="lazy"/>
+              <div class="masonry-overlay"><span>Anniversary Celebration</span></div>
+            </div>
+            <div class="masonry-item" data-category="parties">
+              <img src="image/party/bi.webp" alt="Birthday celebration" loading="lazy"/>
+              <div class="masonry-overlay"><span>Birthday Celebration</span></div>
+            </div>
+            <div class="masonry-item" data-category="corporate">
+              <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600&q=80" alt="Corporate event" loading="lazy"/>
+              <div class="masonry-overlay"><span>Corporate Summit</span></div>
+            </div>
+            <div class="masonry-item" data-category="luxury">
+              <img src="https://images.unsplash.com/photo-1478146059778-26028b07395a?w=600&q=80" alt="Luxury floral decor" loading="lazy"/>
+              <div class="masonry-overlay"><span>Floral Installation</span></div>
+            </div>
+            <div class="masonry-item" data-category="parties">
+              <img src="image/party/coctail.jpeg" alt="Cocktail party" loading="lazy"/>
+              <div class="masonry-overlay"><span>Cocktail Soirée</span></div>
+            </div>
+            <div class="masonry-item" data-category="corporate">
+              <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?w=600&q=80" alt="Award ceremony" loading="lazy"/>
+              <div class="masonry-overlay"><span>Awards Evening</span></div>
+            </div>
+    
+            <div class="masonry-item tall" data-category="luxury">
+              <img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=600&q=80" alt="Luxury gala event" loading="lazy"/>
+              <div class="masonry-overlay"><span>Luxury Gala</span></div>
+            </div>
+            <div class="masonry-item" data-category="parties">
+              <img src="image/party/co.jpg" alt="Birthday celebration" loading="lazy"/>
+              <div class="masonry-overlay"><span>Dj Night</span></div>
+            </div>
+            <div class="masonry-item" data-category="corporate">
+              <img src="image/corp/co.jpg" alt="Corporate event" loading="lazy"/>
+              <div class="masonry-overlay"><span>Business party</span></div>
+            </div>
+            <div class="masonry-item tall" data-category="weddings">
+              <img src="image/wed/haldi.jpg" alt="Wedding ceremony" loading="lazy"/>
+              <div class="masonry-overlay"><span>Haldi Ceremony</span></div>
+            </div>
+            <div class="masonry-item" data-category="luxury">
+              <img src="image/lux/proposal.webp" alt="Luxury floral decor" loading="lazy"/>
+              <div class="masonry-overlay"><span>Proposal</span></div>
+            </div>
+            </div>
+            <div class="masonry-item" data-category="parties">
+              <img src="image/party/disbir.webp" alt="Cocktail party" loading="lazy"/>
+              <div class="masonry-overlay"><span>Birthday Celebration</span></div>
+            </div>
+            <div class="masonry-item" data-category="corporate">
+              <img src="image/corp/Corpo.jpg" alt="Award ceremony" loading="lazy"/>
+              <div class="masonry-overlay"><span>Seminar</span></div>
+            </div>
+            <div class="masonry-item" data-category="weddings">
+              <img src="image/wed/mehndi.jpg" alt="Elegant wedding reception" loading="lazy"/>
+              <div class="masonry-overlay"><span>Mehndi Ceremony</span></div>
+            </div>
+            <div class="masonry-item tall" data-category="luxury" style="width: 500px;">
+              <img src="image/lux/chris.jpeg" alt="Luxury gala event" loading="lazy"/>
+              <div class="masonry-overlay"><span>Christmas Party</span></div>
+            </div>
+    
+            <div class="masonry-item" data-category="corporate">
+              <img src="image/corp/cor.jpg" alt="Corporate event" loading="lazy"/>
+              <div class="masonry-overlay"><span>Star Performer</span></div>
+            </div>
+            <div class="masonry-item tall" data-category="weddings">
+              <img src="image/wed/sanngeet.webp" alt="Wedding ceremony" loading="lazy"/>
+              <div class="masonry-overlay"><span>Sangeet Ceremony</span></div>
+            </div>
+            <div class="masonry-item" data-category="luxury" style="width: 500px; height: 200px;">
+              <img src="image/lux/foreigner.avif" alt="Luxury floral decor" loading="lazy"/>
+              <div class="masonry-overlay"><span>Destination Wedding</span></div>
+            </div>
+            <div class="masonry-item" data-category="weddings">
+              <img src="image/wed/wed.jpg" alt="Wedding table setting" loading="lazy"/>
+              <div class="masonry-overlay"><span>Wedding</span></div>
+            </div>
+            <div class="masonry-item tall" data-category="weddings">
+              <img src="image/wed/recep.jpg" alt="Wedding ceremony" loading="lazy"/>
+              <div class="masonry-overlay"><span>Wedding Reception</span></div>
+            </div>
+            <div class="masonry-item" data-category="parties">
+              <img src="image/party/sufi.webp" alt="Cocktail party" loading="lazy"/>
+              <div class="masonry-overlay"><span>Sufi Night</span></div>
+            </div>
+            <div class="masonry-item" data-category="corporate">
+              <img src="image/corp/corp.jpeg" alt="Award ceremony" loading="lazy"/>
+              <div class="masonry-overlay"><span>Business Dinner</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Lightbox -->
+        <div id="lightbox" class="lightbox">
+          <div class="lightbox-backdrop"></div>
+          <div class="lightbox-content">
+            <button class="lightbox-close" id="lightboxClose">&times;</button>
+            <button class="lightbox-prev" id="lightboxPrev">&#8592;</button>
+            <img src="" alt="" id="lightboxImg" />
+            <button class="lightbox-next" id="lightboxNext">&#8594;</button>
+            <p id="lightboxCaption" class="lightbox-caption"></p>
+          </div>
+        </div>
+    </section>
+
+
+
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="#home" class="nav-logo">Ceremony<span>Squad</span></a>
+                <p>Crafting timeless celebrations with elegance, precision, and heart since 2015.</p>
+                <div class="social-links">
+                <a href="#" class="social-link" aria-label="Instagram">Ig</a>
+                <a href="#" class="social-link" aria-label="Facebook">Fb</a>
+                <a href="#" class="social-link" aria-label="Pinterest">Pt</a>
+                <a href="#" class="social-link" aria-label="YouTube">Yt</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">About Us</a></li>
+                <li><a href="index.html">Services</a></li>
+                <li><a href="index.html">Gallery</a></li>
+                <li><a href="index.html">Events</a></li>
+                <li><a href="index.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Services</h4>
+                <ul>
+                <li><a href="index.html">Wedding Planning</a></li>
+                <li><a href="index.html">Destination Events</a></li>
+                <li><a href="index.html">Corporate Gatherings</a></li>
+                <li><a href="index.html">Birthday Celebrations</a></li>
+                <li><a href="index.html">Luxury Decoration</a></li>
+                <li><a href="index.html">Entertainment</a></li>
+                </ul>
+            </div>
+            <div class="footer-col footer-newsletter">
+                <h4>Newsletter</h4>
+                <p>Receive inspiration, event trends, and exclusive offers.</p>
+                <form class="newsletter-form" id="newsletterForm">
+                <input type="email" placeholder="Your email address" required />
+                <button type="submit">Subscribe</button>
+                </form>
+                <p class="newsletter-success" id="newsletterSuccess">You're on the list!</p>
+            </div>
+            </div>
+            <div class="footer-bottom">
+            <p>© 2026 Ceremony Squad. All rights reserved. Crafted with love.</p>
+        </div>
+  </footer>
+    <script src="script.js"></script>
+</body>
+</html>
